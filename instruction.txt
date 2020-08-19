@@ -1,0 +1,16 @@
+How to pyradiomics pipeline to compute pryradiomics feature
+
+//step 1: login one of storage node in bmi cluster
+     create image folder, segment folder and pyradiomics folder
+     copy image and segment data to above two folders
+
+//step 2: edit "run_container.sh" in this folder
+ In segment folder , review one of json file to find patch_width and patch_heigh , 
+ and then define appropriate patch size value.
+ for example ; if patch_width and patch_heigh are 2048, then patch size is 512.
+ If patch_width and patch_heigh are 4000, then patch size is 500.
+ 
+//step 3: login computing node to run run_container.sh
+sh run_container.sh 
+ 
+//step 4: login storage node to check pyradiomics results folder
