@@ -14,7 +14,7 @@ docker run --name=radiomics-core --restart unless-stopped -itd \
     -e HAS_TUMOR_REGION=no \
     -v /data04/shared/bwang/tmp/images/:/image_files/ \
     -v /data04/shared/bwang/tmp/segment/:/segment_results/ \
-    -v /data04/shared/bwang/tmp/pyradiomics2/:/output/ \
+    -v /data04/shared/bwang/tmp/pyradiomics/:/output/ \
    sbubmi/radiomics_core
  
 
